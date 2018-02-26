@@ -28,14 +28,13 @@
   hosts: sec_nodes
   become: yes
   roles:
-    - subscription_manager
-    - ansible_ssh_pipelining
-    - docker
-    - jq
-    - epel
-    - cockpit
-    - oc
-    - secure_containers
-    - zsh
-    - nodejs
-    - wetty 
+    - { role: subscription-manager-role         }
+    - { role: ansible-ssh-pipelining-role       }
+    - { role: docker-role                       }
+    - { role: jq-role                           }
+    - { role: epel-role                         } 
+    - { role: cockpit-role                      }
+    - { role: secure-containers-role            }
+    - { role: zsh-role                          }
+    - { role: nodejs-role                       }
+    - { role: wetty-role                        }

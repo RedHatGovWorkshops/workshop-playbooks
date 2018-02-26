@@ -5,74 +5,74 @@
 #   name: epel
 
 # from github, overriding the name and specifying a specific tag
-- src: https://github.com/RedHatGovWorkshopsWorkshops/ansible_tower
+- src: https://github.com/RedHatGovWorkshopsWorkshops/ansible-tower-role
   version: master
-  name: ansible_tower
+  name: ansible-tower-role
 
-- src: https://github.com/RedHatGovWorkshops/ansible_ssh_pipelining
+- src: https://github.com/RedHatGovWorkshops/ansible-ssh-pipelining-role
   version: master
-  name: ansible_ssh_pipelining
+  name: ansible-ssh-pipelining-role
 
-- src: https://github.com/RedHatGovWorkshops/atomic_scanner_plugins
+- src: https://github.com/RedHatGovWorkshops/atomic-scanner-plugins-role
   version: master
-  name: atomic_scanner_plugins
+  name: atomic-scanner-plugins-role
 
-- src: https://github.com/RedHatGovWorkshops/aws.infra
+- src: https://github.com/RedHatGovWorkshops/aws-infra-role
   version: master
-  name: aws.infra
+  name: aws-infra-role
 
-- src: https://github.com/RedHatGovWorkshops/cockpit
+- src: https://github.com/RedHatGovWorkshops/cockpit-role
   version: master
-  name: cockpit
+  name: cockpit-role
 
-- src: https://github.com/RedHatGovWorkshops/container_check_stp
+- src: https://github.com/RedHatGovWorkshops/container-check-stp-role
   version: master
-  name: container_check_stp
+  name: container-check-stp-role
 
-- src: https://github.com/RedHatGovWorkshops/docker
+- src: https://github.com/RedHatGovWorkshops/docker-role
   version: master
-  name: docker
+  name: docker-role
 
-- src: https://github.com/RedHatGovWorkshops/epel
+- src: https://github.com/RedHatGovWorkshops/epel-role
   version: master
-  name: epel
+  name: epel-role
 
-- src: https://github.com/RedHatGovWorkshops/jq
+- src: https://github.com/RedHatGovWorkshops/jq-role
   version: master
-  name: jq
+  name: jq-role
 
-- src: https://github.com/RedHatGovWorkshops/LetsEncrypt
+- src: https://github.com/RedHatGovWorkshops/LetsEncrypt-role
   version: master
-  name: LetsEncrypt
+  name: LetsEncrypt-role
 
-- src: https://github.com/RedHatGovWorkshops/nodejs
+- src: https://github.com/RedHatGovWorkshops/nodejs-role
   version: master
-  name: nodejs
+  name: nodejs-role
 
-- src: https://github.com/RedHatGovWorkshops/oc
+- src: https://github.com/RedHatGovWorkshops/oc-role
   version: master
-  name: oc
+  name: oc-role
 
-- src: https://github.com/RedHatGovWorkshops/openshift_templates
+- src: https://github.com/RedHatGovWorkshops/openshift-templates-role
   version: master
-  name: openshift_templates
+  name: openshift-templates-role
 
-- src: https://github.com/RedHatGovWorkshops/skopeo
+- src: https://github.com/RedHatGovWorkshops/skopeo-role
   version: master
-  name: skopeo
+  name: skopeo-role
 
-- src: https://github.com/RedHatGovWorkshops/subscription_manager
+- src: https://github.com/RedHatGovWorkshops/subscription-manager-role
   version: master
-  name: subscription_manager
+  name: subscription-manager-role
 
-- src: https://github.com/RedHatGovWorkshops/unregister
+- src: https://github.com/RedHatGovWorkshops/unregister-role
   version: master
-  name: unregister
+  name: unregister-role
 
-- src: https://github.com/RedHatGovWorkshops/wetty
+- src: https://github.com/RedHatGovWorkshops/wetty-role
   version: master
   name: wetty
 
-- src: https://github.com/RedHatGovWorkshops/zsh
+- src: https://github.com/RedHatGovWorkshops/zsh-role
   version: master
-  name: zsh
+  name: zsh-role

@@ -28,26 +28,26 @@
   hosts: masters, nodes
   become: yes
   roles:
-    - openshift.prereq
+    - openshift-prereq-role
 
 - name: OpenShift | Advanced installation
   hosts: masters
   roles:
-    - openshift.install
+    - openshift-install-role
 
 - name: OpenShift | Configure cluster
   hosts: masters
   become: yes
   roles:
-    - openshift.config
+    - openshift-config-role
 
 - name: OpenShift | Wetty
   hosts: wetty
   become: yes
   roles:
-    - epel
-    - nodejs
-    - wetty
-    - oc
-    - zsh
+    - { role:  epel-role      }
+    - { role: nodejs-role     }
+    - { role: wetty-role      }
+    - { role: oc-role         }
+    - { role: zsh-role        }
     

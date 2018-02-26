@@ -29,9 +29,9 @@
   remote_user: "{{ system_user }}"
   hosts: tower_masters
   roles:
-    - { role: subscription_manager }
-    - { role: epel                 }
-    - { role: nodejs               }
-    - { role: ansible.tower        }
-    - { role: zsh                  } 
-    - { role: wetty                }
+    - { role: subscription-manager-role }
+    - { role: epel-role                 }
+    - { role: nodejs-role               }
+    - { role: ansible-tower-role        }
+    - { role: zsh-role                  } 
+    - { role: wetty-role                }

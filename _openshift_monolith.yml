@@ -27,15 +27,15 @@
   hosts: openshift_masters, openshift_nodes
   become: yes
   roles:
-    - openshift.prereq
+    - openshift-prereq-role
 
 - name: OpenShift | Advanced installation
   hosts: openshift_masters
   roles:
-    - openshift.install
+    - openshift-install-role
 
 - name: OpenShift | Configure cluster
   hosts: openshift_masters
   become: yes
   roles:
-    - openshift.config
+    - openshift-config-role
