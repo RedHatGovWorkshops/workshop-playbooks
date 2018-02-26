@@ -1,0 +1,23 @@
+vault_aws_access_key:                   ""
+vault_aws_secret_key:                   ""
+  
+vault_domain_name:                      ""
+vault_zone_id:                          ""
+  
+vault_cloud_access_east_1:              ""
+vault_cloud_access_east_2:              ""
+vault_cloud_access_west_1:              ""
+
+
+  
+vault_subscription_username:            ""
+vault_subscription_password:            ""
+vault_subscription_pool_id:             ""
+  
+vault_subscription_activation_key:      ""
+vault_subscription_org_id:              ""
+  
+vault_wetty_password:                   ""
+
+vault_openshift_cluster_admin_username: ""
+vault_openshift_cluster_admin_password: ""

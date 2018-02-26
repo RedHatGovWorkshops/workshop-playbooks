@@ -1,0 +1,31 @@
+ansible_ssh_user=ec2-user
+ansible_become=yes
+
+[local_target]
+localhost  ansible_connection=local  ansible_python_interpreter='/usr/bin/env python'
+
+
+# Ansible Workshops
+[tower_masters]
+demo1.master.0.redhatgov.io
+
+[tower_nodes]
+demo1.node.0.redhatgov.io
+
+
+# OpenShift Workshops
+[masters]
+demo1.master.0.redhatgov.io
+
+[nodes]
+demo1.node.0.redhatgov.io
+
+
+# Secure Containers & OpenShift
+[sec_nodes]
+demo1.node.0.redhatgov.io
+
+# Wetty (Browser-based SSH)
+[wetty]
+demo1.wetty.redhatgov.io
+

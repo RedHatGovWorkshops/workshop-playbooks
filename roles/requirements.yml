@@ -1,0 +1,78 @@
+# # install_roles.yml
+
+# from galaxy
+# - src: epiloque.epel
+#   name: epel
+
+# from github, overriding the name and specifying a specific tag
+- src: https://github.com/RedHatGovWorkshopsWorkshops/ansible_tower
+  version: master
+  name: ansible_tower
+
+- src: https://github.com/RedHatGovWorkshops/ansible_ssh_pipelining
+  version: master
+  name: ansible_ssh_pipelining
+
+- src: https://github.com/RedHatGovWorkshops/atomic_scanner_plugins
+  version: master
+  name: atomic_scanner_plugins
+
+- src: https://github.com/RedHatGovWorkshops/aws.infra
+  version: master
+  name: aws.infra
+
+- src: https://github.com/RedHatGovWorkshops/cockpit
+  version: master
+  name: cockpit
+
+- src: https://github.com/RedHatGovWorkshops/container_check_stp
+  version: master
+  name: container_check_stp
+
+- src: https://github.com/RedHatGovWorkshops/docker
+  version: master
+  name: docker
+
+- src: https://github.com/RedHatGovWorkshops/epel
+  version: master
+  name: epel
+
+- src: https://github.com/RedHatGovWorkshops/jq
+  version: master
+  name: jq
+
+- src: https://github.com/RedHatGovWorkshops/LetsEncrypt
+  version: master
+  name: LetsEncrypt
+
+- src: https://github.com/RedHatGovWorkshops/nodejs
+  version: master
+  name: nodejs
+
+- src: https://github.com/RedHatGovWorkshops/oc
+  version: master
+  name: oc
+
+- src: https://github.com/RedHatGovWorkshops/openshift_templates
+  version: master
+  name: openshift_templates
+
+- src: https://github.com/RedHatGovWorkshops/skopeo
+  version: master
+  name: skopeo
+
+- src: https://github.com/RedHatGovWorkshops/subscription_manager
+  version: master
+  name: subscription_manager
+
+- src: https://github.com/RedHatGovWorkshops/unregister
+  version: master
+  name: unregister
+
+- src: https://github.com/RedHatGovWorkshops/wetty
+  version: master
+  name: wetty
+
+- src: https://github.com/RedHatGovWorkshops/zsh
+  version: master
+  name: zsh

@@ -1,0 +1,41 @@
+---
+#---------------------------------------------------------
+# Secure OpenShift: 
+# http://redhatgov.io/workshops/security_openshift/
+#---------------------------------------------------------
+# Infrastructure
+- name: Provision in AWS
+  hosts: localhost
+  roles:
+    - aws-infra-role
+  when: aws
+
+- name: Provision in Azure
+  hosts: localhost
+  roles:
+    - azure-infra-role
+  when: azure
+
+- name: Provision in GCC
+  hosts: localhost
+  roles:
+    - gcc-infra-role
+  when: gcc
+
+# Workshop
+- name: Secure OpenShift | Configure instances
+  remote_user: "{{ system_user }}"
+  hosts: sec_nodes
+  become: yes
+  roles:
+    - subscription_manager
+    - ansible_ssh_pipelining
+    - docker
+    - jq
+    - epel
+    - cockpit
+    - oc
+    - secure_containers
+    - zsh
+    - nodejs
+    - wetty 
