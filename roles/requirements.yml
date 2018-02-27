@@ -67,7 +67,7 @@
 
 - src: https://github.com/RedHatGovWorkshops/wetty-role
   version: master
-  name: wetty
+  name: wetty-role
 
 - src: https://github.com/RedHatGovWorkshops/zsh-role
   version: master
