@@ -18,7 +18,7 @@ gcc:                                 "false"
 # ANSIBLE ROLE KEY                   VALUE
 #######################################################################################
 # aws_infra_ansible                  .redhatgov working dir 
-terraform_working_dir:               "{{ lookup('env','PWD') }}/.redhatgov"
+terraform_working_dir:               "/tmp"
 # aws_infra_ansible                  AWS API KEYS
 aws_access_key:                      "{{ vault_aws_access_key }}"
 aws_secret_key:                      "{{ vault_aws_secret_key }}"
@@ -28,6 +28,8 @@ zone_id:                             "{{ vault_zone_id }}"
 # aws_infra_ansible                  AWS Vars
 number_master_nodes:                 1                                     # Master Nodes  (OpenShift Master nodes or Ansible Tower nodes)
 number_nodes:                        1                                     # Compute Nodes (OpenShift Compute nodes or Tower managed nodes)
+number_tower_nodes:                  1
+tower_instance_type:                 1
 master_instance_type:                "t2.medium"                           # Master Instance Size  (OpenShift m4.xlarge)
 node_instance_type:                  "t2.micro"                            # Compute Instance Size (OpenShift m4.large)
 region:                              "us-east-1"                           # AWS Region, configures ec2.ini too
