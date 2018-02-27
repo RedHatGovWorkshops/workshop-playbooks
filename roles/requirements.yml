@@ -5,7 +5,7 @@
 #   name: epel
 
 # from github, overriding the name and specifying a specific tag
-- src: https://github.com/RedHatGovWorkshopsWorkshops/ansible-tower-role
+- src: https://github.com/RedHatGovWorkshops/ansible-tower-role
   version: master
   name: ansible-tower-role
 
@@ -13,7 +13,7 @@
   version: master
   name: ansible-ssh-pipelining-role
 
-- src: https://github.com/RedHatGovWorkshops/atomic-scanner-plugins-role
+- src: https://github.com/RedHatGovWorkshops/atomic-scanner-plugin-role
   version: master
   name: atomic-scanner-plugins-role
 
@@ -24,10 +24,6 @@
 - src: https://github.com/RedHatGovWorkshops/cockpit-role
   version: master
   name: cockpit-role
-
-- src: https://github.com/RedHatGovWorkshops/container-check-stp-role
-  version: master
-  name: container-check-stp-role
 
 - src: https://github.com/RedHatGovWorkshops/docker-role
   version: master
