@@ -19,7 +19,7 @@
 - name: Provision in GCC
   hosts: localhost
   roles:
-    - { role: gcc-infra-role, when: gcc }
+     - { role: gcc-infra-role, when: gcc }
 
 # Workshop
 - name: Ansible Tower | Configure nodes
