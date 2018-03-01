@@ -72,3 +72,7 @@
 - src: https://github.com/RedHatGovWorkshops/zsh-role
   version: master
   name: zsh-role
+
+- src: https://github.com/RedHatGovWorkshops/containerized-wetty-deployer-role
+  version: master
+  name: containerized-wetty-deployer-role
