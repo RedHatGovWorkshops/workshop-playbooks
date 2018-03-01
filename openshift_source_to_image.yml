@@ -1,0 +1,47 @@
+---
+#---------------------------------------------------------
+# Strangling the Monolith: 
+# http://redhatgov.io/workshops/source_to_image
+#---------------------------------------------------------
+# Infrastructure
+# - name: Provision in AWS
+#   hosts: localhost
+#   roles:
+#     - aws-infra-role
+#   when: aws
+
+# - name: Provision in Azure
+#   hosts: localhost
+#   roles:
+#     - azure-infra-role
+#   when: azure
+
+# - name: Provision in GCC
+#   hosts: localhost
+#   roles:
+#     - gcc-infra-role
+#   when: gcc
+
+# # Workshop
+# - name: OpenShift | Pre-installation
+#   hosts: openshift_masters, openshift_nodes
+#   become: yes
+#   roles:
+#     - openshift-prereq-role
+
+# - name: OpenShift | Advanced installation
+#   hosts: openshift_masters
+#   roles:
+#     - openshift-install-role
+
+# - name: OpenShift | Configure cluster
+#   hosts: openshift_masters
+#   become: yes
+#   roles:
+#     - openshift-config-role
+
+- name: Workshop S2I | Containerized Wetty
+  hosts: openshift_masters
+  connection: local
+  roles:
+    - containerized-wetty-deployer-role
