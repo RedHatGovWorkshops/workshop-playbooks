@@ -21,6 +21,10 @@
   version: master
   name: aws-infra-role
 
+- src: https://github.com/RedHatGovWorkshops/aws-ansible-workshop-role
+  version: master
+  name: aws-ansible-workshop-role
+
 - src: https://github.com/RedHatGovWorkshops/cockpit-role
   version: master
   name: cockpit-role

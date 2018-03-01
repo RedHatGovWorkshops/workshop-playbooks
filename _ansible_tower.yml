@@ -9,7 +9,7 @@
   hosts: localhost
   become: no
   roles:
-    - { role: aws-infra-role, when: aws }
+    - { role: aws-ansible-workshop-role, when: aws }
 
 # - name: Provision in Azure
 #   hosts: localhost
