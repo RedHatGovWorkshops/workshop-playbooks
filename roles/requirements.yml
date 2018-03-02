@@ -80,3 +80,7 @@
 - src: https://github.com/RedHatGovWorkshops/containerized-wetty-deployer-role
   version: master
   name: containerized-wetty-deployer-role
+
+- src: https://github.com/RedHatGovWorkshops/tower-inventory-role
+  version: master
+  name: tower-inventory-role

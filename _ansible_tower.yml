@@ -21,8 +21,16 @@
 #   roles:
 #      - { role: gcc-infra-role, when: gcc }
 
+
+# Tower Inventory Sync
+- name: Tower Inventory Sync
+  hosts: localhost
+  become: no
+  roles:
+    - { role: tower-inventory-role }
+
 # Workshop
-- name: Ansible Tower | Configure nodes
+- name: Ansible Tower Workshop | Configure nodes
   become: yes
   remote_user: "{{ system_user }}"
   hosts: tower_masters
