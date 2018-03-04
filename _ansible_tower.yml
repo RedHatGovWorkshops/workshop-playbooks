@@ -33,7 +33,7 @@
 - name: Ansible Tower Workshop | Configure nodes
   become: yes
   remote_user: "{{ system_user }}"
-  hosts: "changeme-inventory"
+  hosts: "changeme-group"
   roles:
     - { role: subscription-manager-role }
     - { role: epel-role                 }
