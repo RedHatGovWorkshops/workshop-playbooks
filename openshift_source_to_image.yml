@@ -45,3 +45,9 @@
   become: yes
   roles:
     - containerized-wetty-deployer-role
+
+- name: Workshop S2I | S2I Workshop Configure
+  hosts: openshift_masters
+  become: yes
+  roles:
+    - s2i-workshop-role
