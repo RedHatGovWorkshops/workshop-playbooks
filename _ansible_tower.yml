@@ -32,7 +32,6 @@
 # Workshop
 - name: Ansible Tower Workshop | Configure nodes
   become: yes
-  remote_user: "{{ system_user }}"
   hosts: changeme-inventory
   roles:
     - { role: subscription-manager-role }
