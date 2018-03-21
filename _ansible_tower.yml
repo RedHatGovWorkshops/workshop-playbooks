@@ -32,7 +32,7 @@
 # Workshop
 - name: Ansible Tower Workshop | Configure nodes
   become: yes
-  hosts: changeme-inventory
+  hosts: all
   roles:
     - { role: subscription-manager-role }
     - { role: epel-role                 }
