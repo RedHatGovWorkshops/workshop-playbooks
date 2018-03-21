@@ -33,7 +33,7 @@
 - name: Ansible Tower Workshop | Configure nodes
   become: yes
   remote_user: "{{ system_user }}"
-  hosts: "tag_DeleteTag_{{ workshop_prefix }}_{{ owner_email }}"
+  hosts: tag_DeleteTag_changeme_bsollar_redhat_com
   roles:
     - { role: subscription-manager-role }
     - { role: epel-role                 }
