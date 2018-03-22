@@ -1,0 +1,7 @@
+---
+# Tower Inventory Sync
+- name: Tower Inventory Sync
+  hosts: localhost
+  become: no
+  roles: 
+    - { role: tower-inventory-role }

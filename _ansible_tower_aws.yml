@@ -1,0 +1,22 @@
+---
+#---------------------------------------------------------
+# Ansible Tower: 
+# http://redhatgov.io/workshops/ansible_tower/
+#---------------------------------------------------------
+
+# Infrastructure
+- name: Provision in AWS
+  hosts: localhost
+  become: no
+  roles:
+    - { role: aws-ansible-workshop-role, when: aws }
+
+# - name: Provision in Azure
+#   hosts: localhost
+#   roles:
+#     - { role: azure-infra-role, when: azure }
+
+# - name: Provision in GCC
+#   hosts: localhost
+#   roles:
+#      - { role: gcc-infra-role, when: gcc }
