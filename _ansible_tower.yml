@@ -22,12 +22,12 @@
 #      - { role: gcc-infra-role, when: gcc }
 
 
-# Tower Inventory Sync
-- name: Tower Inventory Sync
-  hosts: localhost
-  become: no
-  roles: 
-    - { role: tower-inventory-role }
+# # Tower Inventory Sync
+# - name: Tower Inventory Sync
+#   hosts: localhost
+#   become: no
+#   roles: 
+#     - { role: tower-inventory-role }
 
 # Workshop
 - name: Ansible Tower Workshop | Configure nodes
